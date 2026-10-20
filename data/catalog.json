@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-OHXprFDOPZg-1792518372357",
+    "videoId": "OHXprFDOPZg",
+    "title": "Bùi Anh Tuấn",
+    "artist": "Hàn Gắn",
+    "duration": 246,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/OHXprFDOPZg/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=bui-anh-tuan-1792518402.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/bui-anh-tuan-1792518402.mp3",
+    "dateAdded": "2026-10-20T17:47:09Z"
+  },
+  {
     "id": "trk-5jbMKCyMfc8-1792517743062",
     "videoId": "5jbMKCyMfc8",
     "title": "Thương Nhau Đến Thế Nhưng Chỉ Là Đã Từng Remix",
