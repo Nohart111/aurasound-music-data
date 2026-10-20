@@ -1,20 +1,5 @@
 [
   {
-    "id": "trk-FN7ALfpGxiI-1792512897880",
-    "videoId": "FN7ALfpGxiI",
-    "title": "| SƠN TÙNG M-TP",
-    "artist": "NƠI NÀY CÓ ANH",
-    "duration": 279,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "256 kbps",
-    "format": "m4a",
-    "coverUrl": "https://i.ytimg.com/vi/FN7ALfpGxiI/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=son-tung-m-tp-1792512908.m4a",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/son-tung-m-tp-1792512908.m4a",
-    "dateAdded": "2026-10-20T16:15:31Z"
-  },
-  {
     "id": "trk-U07kJZp5b1o-1792512776610",
     "videoId": "U07kJZp5b1o",
     "title": "Cho Tôi Đi Theo",
