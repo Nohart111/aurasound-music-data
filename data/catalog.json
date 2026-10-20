@@ -1,0 +1,16 @@
+[
+  {
+    "id": "trk-cloud-1792482100",
+    "title": "TINH HÀ SAY HI [PERFORMANCE]",
+    "artist": "Dương Domic, buitruonglinh, CONGB, WEAN, Vận Toàn",
+    "duration": 285,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "256 kbps",
+    "format": "m4a",
+    "coverUrl": "https://i.ytimg.com/vi/l_uzEREOKfo/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=tinh-ha-say-hi-performance-1792482069.m4a",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-ha-say-hi-performance-1792482069.m4a",
+    "dateAdded": "2026-10-20T07:41:40Z"
+  }
+]
