@@ -1,5 +1,19 @@
 [
   {
+    "id": "trk-1792488238216",
+    "title": "ĐỪNG LÀM TRÁI TIM ANH ĐAU",
+    "artist": "SƠN TÙNG M-TP",
+    "duration": 326,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "256 kbps",
+    "format": "m4a",
+    "coverUrl": "https://i.ytimg.com/vi/abPmZCZZrFA/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=dung-lam-trai-tim-anh-dau-1792488234518.m4a",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/dung-lam-trai-tim-anh-dau-1792488234518.m4a",
+    "dateAdded": "2026-10-20T09:23:58.216Z"
+  },
+  {
     "id": "trk-cloud-1792482236",
     "title": "'một đời' x 'Người Tốt Nhất Cho Em'",
     "artist": "Anh Trai Vượt Ngàn Chông Gai - Topic",
