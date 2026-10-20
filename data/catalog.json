@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-FN7ALfpGxiI-1792517413367",
+    "videoId": "FN7ALfpGxiI",
+    "title": "| SƠN TÙNG M-TP",
+    "artist": "NƠI NÀY CÓ ANH",
+    "duration": 278,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/FN7ALfpGxiI/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=son-tung-m-tp-1792517448.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/son-tung-m-tp-1792517448.mp3",
+    "dateAdded": "2026-10-20T17:31:22Z"
+  },
+  {
     "id": "trk-PCxhM7IHiwk-1792516512537",
     "videoId": "PCxhM7IHiwk",
     "title": "Lyrics Video HD",
