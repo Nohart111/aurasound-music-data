@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-s1-qCmM9Z-w-1792519743098",
+    "videoId": "s1-qCmM9Z-w",
+    "title": "Nơi Tình Yêu Kết Thúc",
+    "artist": "Bùi Anh Tuấn",
+    "duration": 318,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/s1-qCmM9Z-w/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=noi-tinh-yeu-ket-thuc-1792519780.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/noi-tinh-yeu-ket-thuc-1792519780.mp3",
+    "dateAdded": "2026-10-20T18:10:15Z"
+  },
+  {
     "id": "trk-L4eJs6GMnoE-1792519678611",
     "videoId": "L4eJs6GMnoE",
     "title": "Bùi Anh Tuấn",
