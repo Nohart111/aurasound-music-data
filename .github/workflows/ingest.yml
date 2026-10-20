@@ -47,6 +47,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install --upgrade --no-cache-dir yt-dlp
           mkdir -p output
 
@@ -68,6 +69,7 @@ jobs:
           import re
           import unicodedata
           import subprocess
+          import shutil
           import urllib.request
           import urllib.parse
           import glob
@@ -101,42 +103,57 @@ jobs:
           downloaded_file = None
           verified_duration = 0
 
+          HAS_FFPROBE = bool(shutil.which("ffprobe"))
+          HAS_FFMPEG = bool(shutil.which("ffmpeg"))
+
           def verify_and_transcode_to_mp3(candidate_path, dest_mp3_path):
               global verified_duration
               if not candidate_path or not os.path.exists(candidate_path):
                   return False
-              if os.path.getsize(candidate_path) < 40000:
+              fsize = os.path.getsize(candidate_path)
+              if fsize < 40000:
                   return False
 
-              # 1. Kiểm tra bằng ffprobe xem file có luồng âm thanh thực sự và dài >= 30 giây không
-              probe_cmd = [
-                  "ffprobe", "-v", "error",
-                  "-show_entries", "format=duration",
-                  "-of", "default=noprint_wrappers=1:nokey=1",
-                  candidate_path
-              ]
-              probe_res = subprocess.run(probe_cmd, capture_output=True, text=True)
-              try:
-                  dur_val = float(probe_res.stdout.strip())
-                  if dur_val < 30.0:
-                      print(f"Bỏ qua file tạm vì thời lượng quá ngắn ({dur_val:.1f}s).", flush=True)
+              dur_val = 0.0
+              if HAS_FFPROBE:
+                  try:
+                      probe_cmd = [
+                          "ffprobe", "-v", "error",
+                          "-show_entries", "format=duration",
+                          "-of", "default=noprint_wrappers=1:nokey=1",
+                          candidate_path
+                      ]
+                      probe_res = subprocess.run(probe_cmd, capture_output=True, text=True)
+                      dur_val = float(probe_res.stdout.strip())
+                      if dur_val < 30.0:
+                          print(f"Bỏ qua file tạm vì thời lượng quá ngắn ({dur_val:.1f}s).", flush=True)
+                          return False
+                  except Exception as e:
+                      print(f"ffprobe kiểm tra không đạt ({e}), thử tiếp nguồn khác...", flush=True)
                       return False
-              except Exception:
-                  print("File tạm không phải định dạng âm thanh hợp lệ (ffprobe từ chối), đang thử nguồn tiếp theo...", flush=True)
-                  return False
 
-              # 2. Chuẩn hóa sang MP3 192kbps, 44.1kHz Stereo để mọi trình duyệt phát được 100%
-              ff_cmd = [
-                  "ffmpeg", "-y", "-v", "error",
-                  "-i", candidate_path,
-                  "-vn", "-acodec", "libmp3lame", "-b:a", "192k", "-ar", "44100", "-ac", "2",
-                  dest_mp3_path
-              ]
-              ff_res = subprocess.run(ff_cmd, capture_output=True, text=True)
-              if ff_res.returncode == 0 and os.path.exists(dest_mp3_path) and os.path.getsize(dest_mp3_path) > 100000:
-                  verified_duration = int(round(dur_val))
-                  print(f"Đã xác thực & chuẩn hóa MP3 thành công ({verified_duration}s, {os.path.getsize(dest_mp3_path) // 1024} KB).", flush=True)
+              if HAS_FFMPEG:
+                  try:
+                      ff_cmd = [
+                          "ffmpeg", "-y", "-v", "error",
+                          "-i", candidate_path,
+                          "-vn", "-acodec", "libmp3lame", "-b:a", "192k", "-ar", "44100", "-ac", "2",
+                          dest_mp3_path
+                      ]
+                      ff_res = subprocess.run(ff_cmd, capture_output=True, text=True)
+                      if ff_res.returncode == 0 and os.path.exists(dest_mp3_path) and os.path.getsize(dest_mp3_path) > 100000:
+                          verified_duration = int(round(dur_val)) if dur_val > 0 else int(os.environ.get("INPUT_DURATION", "240"))
+                          print(f"Đã chuẩn hóa MP3 thành công ({verified_duration}s, {os.path.getsize(dest_mp3_path) // 1024} KB).", flush=True)
+                          return True
+                  except Exception as e:
+                      print(f"ffmpeg transcode lỗi ({e}).", flush=True)
+
+              # Fallback nếu không có ffmpeg nhưng file đã là mp3 hợp lệ
+              if candidate_path.lower().endswith(".mp3") and fsize > 100000:
+                  shutil.copyfile(candidate_path, dest_mp3_path)
+                  verified_duration = int(os.environ.get("INPUT_DURATION", "240"))
                   return True
+
               return False
 
           clean_title = clean_query_title(raw_title)
@@ -148,13 +165,12 @@ jobs:
               search_queries.append(clean_title)
 
           # =========================================================================
-          # TẦNG 1A: SoundCloud Direct API v2 (Tự động trích xuất client_id sống)
+          # TẦNG 1A: SoundCloud Direct API v2 (Bỏ qua bài DRM / Sub High Tier)
           # =========================================================================
           try:
               print("Đang tìm nguồn âm thanh chất lượng cao qua SoundCloud CDN...", flush=True)
               found_cid = None
 
-              # Quét các bundle JS trên trang chủ SoundCloud để lấy client_id sống mới nhất
               try:
                   sc_req = urllib.request.Request("https://soundcloud.com", headers={"User-Agent": UA})
                   with urllib.request.urlopen(sc_req, timeout=8) as r:
@@ -178,23 +194,30 @@ jobs:
                   for q in search_queries:
                       if downloaded_file:
                           break
-                      search_api = f"https://api-v2.soundcloud.com/search/tracks?q={urllib.parse.quote(q)}&client_id={found_cid}&limit=8"
+                      search_api = f"https://api-v2.soundcloud.com/search/tracks?q={urllib.parse.quote(q)}&client_id={found_cid}&limit=10"
                       req = urllib.request.Request(search_api, headers={"User-Agent": UA})
                       with urllib.request.urlopen(req, timeout=8) as r:
                           sc_data = json.loads(r.read().decode("utf-8"))
 
                       for item in sc_data.get("collection", []):
+                          # Bỏ qua các track bị khóa DRM / trả phí Go+
+                          if item.get("monetization_model") in ["SUB_HIGH_TIER", "SUB_MID_TIER"]:
+                              continue
+                          if item.get("policy") == "BLOCK" or item.get("snipped"):
+                              continue
                           dur_ms = item.get("duration") or 0
                           if dur_ms < 55000 or dur_ms > 900000:
                               continue
+
                           transcodings = item.get("media", {}).get("transcodings", [])
-                          # Ưu tiên progressive trước, sau đó đến hls
                           transcodings_sorted = sorted(
                               transcodings,
                               key=lambda x: 0 if x.get("format", {}).get("protocol") == "progressive" else 1
                           )
                           for tr in transcodings_sorted:
-                              protocol = tr.get("format", {}).get("protocol")
+                              protocol = str(tr.get("format", {}).get("protocol", "")).lower()
+                              if "drm" in protocol or "encrypt" in protocol:
+                                  continue
                               tr_url = tr.get("url")
                               if protocol in ["progressive", "hls"] and tr_url:
                                   try:
@@ -208,15 +231,19 @@ jobs:
                                       stream_link = st_res.get("url")
                                       if stream_link:
                                           raw_sc_file = os.path.join("output", f"raw_sc_api_{ts}.mp3")
-                                          subprocess.run(
-                                              [
-                                                  "ffmpeg", "-y", "-v", "error",
-                                                  "-i", stream_link,
-                                                  "-vn", "-acodec", "libmp3lame", "-b:a", "192k", "-ar", "44100", "-ac", "2",
-                                                  raw_sc_file
-                                              ],
-                                              capture_output=True
-                                          )
+                                          if HAS_FFMPEG:
+                                              subprocess.run(
+                                                  [
+                                                      "ffmpeg", "-y", "-v", "error",
+                                                      "-i", stream_link,
+                                                      "-vn", "-acodec", "libmp3lame", "-b:a", "192k", "-ar", "44100", "-ac", "2",
+                                                      raw_sc_file
+                                                  ],
+                                                  capture_output=True
+                                              )
+                                          elif protocol == "progressive":
+                                              urllib.request.urlretrieve(stream_link, raw_sc_file)
+
                                           if verify_and_transcode_to_mp3(raw_sc_file, final_mp3_path):
                                               downloaded_file = final_mp3_name
                                               print("Tải thành công siêu tốc qua SoundCloud API:", downloaded_file, flush=True)
@@ -229,7 +256,7 @@ jobs:
               print("SoundCloud API notice:", e, flush=True)
 
           # =========================================================================
-          # TẦNG 1B: yt-dlp SoundCloud Search (scsearch - không bao giờ bị chặn bot)
+          # TẦNG 1B: yt-dlp SoundCloud Search (Bỏ qua DRM với --ignore-errors)
           # =========================================================================
           if not downloaded_file:
               for q in search_queries:
@@ -244,7 +271,9 @@ jobs:
                   sc_out_tpl = os.path.join("output", "raw_sc_ytdlp.%(ext)s")
                   cmd = [
                       "yt-dlp",
-                      f"scsearch3:{q}",
+                      f"scsearch5:{q}",
+                      "--ignore-errors",
+                      "--no-abort-on-error",
                       "--match-filter", "duration > 55 & duration < 900",
                       "--max-downloads", "1",
                       "--no-playlist",
@@ -297,7 +326,6 @@ jobs:
                               if prog_data.get("progress") == 1000 and prog_data.get("download_url"):
                                   dl_url = prog_data["download_url"]
                                   raw_proxy_file = os.path.join("output", f"raw_proxy.{fmt}")
-                                  # Tải bằng curl -L kèm đầy đủ User-Agent và Referer để tránh trang lỗi HTML/CDN chặn
                                   subprocess.run(
                                       [
                                           "curl", "-L", "-s", "--max-time", "45",
@@ -374,7 +402,6 @@ jobs:
             exit 1
           fi
 
-          # Xóa các file âm thanh cũ/lỗi của cùng bài hát trong Release tracks-v1 (ví dụ: file .m4a bị lỗi trước đó)
           if [ -n "$SONG_SLUG" ]; then
             OLD_ASSETS=$(gh release view tracks-v1 --json assets --jq ".assets[].name" 2>/dev/null | grep "^${SONG_SLUG}-" || true)
             for OLD_ASSET in $OLD_ASSETS; do
