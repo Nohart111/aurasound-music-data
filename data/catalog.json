@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-nTEYgZywpPA-1792513011456",
+    "videoId": "nTEYgZywpPA",
+    "title": "Track 06 x Nơi Này Có Anh (DJ ATOM Mashup)",
+    "artist": "DJ ATOM",
+    "duration": 242,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "256 kbps",
+    "format": "m4a",
+    "coverUrl": "https://i.ytimg.com/vi/nTEYgZywpPA/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=track-06-x-noi-nay-co-anh-dj-atom-mashup-1792513023.m4a",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/track-06-x-noi-nay-co-anh-dj-atom-mashup-1792513023.m4a",
+    "dateAdded": "2026-10-20T16:17:29Z"
+  },
+  {
     "id": "trk-1792488238216",
     "title": "ĐỪNG LÀM TRÁI TIM ANH ĐAU",
     "artist": "SƠN TÙNG M-TP",
