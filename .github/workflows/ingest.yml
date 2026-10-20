@@ -37,94 +37,108 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install yt-dlp & ffmpeg
+      - name: Install yt-dlp
         run: |
           pip install --upgrade yt-dlp
-          sudo apt-get update && sudo apt-get install -y ffmpeg
 
       - name: Download Audio from YouTube
+        env:
+          INPUT_URL: ${{ github.event.inputs.video_url }}
+          INPUT_TITLE: ${{ github.event.inputs.title }}
         run: |
           mkdir -p output
-          python -c "
+          python -c '
           import subprocess, sys, time, os, re, unicodedata
 
-          url = '${{ github.event.inputs.video_url }}'
-          title = '${{ github.event.inputs.title }}'
-          
-          def slugify(text):
-              text = unicodedata.normalize('NFD', text).encode('ascii', 'ignore').decode('utf-8').lower()
-              text = re.sub(r'[^a-z0-9]+', '-', text).strip('-')
-              return text[:50] or 'track'
+          url = os.environ.get("INPUT_URL", "").strip()
+          title = os.environ.get("INPUT_TITLE", "").strip()
 
-          safe_name = f'{slugify(title)}-{int(time.time())}.m4a'
-          out_path = os.path.join('output', safe_name)
+          def slugify(text):
+              text = unicodedata.normalize("NFD", text).encode("ascii", "ignore").decode("utf-8").lower()
+              text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+              return text[:50] or "track"
+
+          safe_name = f"{slugify(title)}-{int(time.time())}.m4a"
+          out_path = os.path.join("output", safe_name)
 
           cmd = [
-              'yt-dlp',
-              '-f', 'ba[ext=m4a]/ba/b',
-              '--no-playlist',
-              '--no-part',
-              '--no-warnings',
-              '-o', out_path,
+              "yt-dlp",
+              "--extractor-args", "youtube:player_client=android_vr,android",
+              "-f", "ba[ext=m4a]/ba/b",
+              "--no-playlist",
+              "--no-part",
+              "--no-warnings",
+              "-o", out_path,
               url
           ]
+
+          print(f"Downloading: {url} -> {out_path}")
           res = subprocess.run(cmd)
           if res.returncode != 0:
+              print("yt-dlp failed with code", res.returncode)
               sys.exit(1)
 
-          with open('output/target_filename.txt', 'w') as f:
+          with open("output/target_filename.txt", "w") as f:
               f.write(safe_name)
-          "
+          '
 
       - name: Upload to GitHub Release CDN (tracks-v1)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TARGET_FILE=$(cat output/target_filename.txt)
-          gh release upload tracks-v1 "output/$TARGET_FILE" --clobber
+          gh release upload tracks-v1 "output/$TARGET_FILE" --clobber || gh release create tracks-v1 "output/$TARGET_FILE" --title "AuraSound Tracks CDN" --notes "Automated track storage"
 
       - name: Update catalog.json in Repository
+        env:
+          INPUT_TITLE: ${{ github.event.inputs.title }}
+          INPUT_ARTIST: ${{ github.event.inputs.artist }}
+          INPUT_THUMBNAIL: ${{ github.event.inputs.thumbnail }}
+          INPUT_DURATION: ${{ github.event.inputs.duration }}
         run: |
-          python -c "
+          python -c '
           import json, os, time
 
-          TARGET_FILE = open('output/target_filename.txt').read().strip()
-          title = '${{ github.event.inputs.title }}'.strip()
-          artist = '${{ github.event.inputs.artist }}'.strip() or 'Nghệ sĩ chưa rõ'
-          thumbnail = '${{ github.event.inputs.thumbnail }}'.strip()
-          duration = int('${{ github.event.inputs.duration }}' or 240)
+          TARGET_FILE = open("output/target_filename.txt").read().strip()
+          title = os.environ.get("INPUT_TITLE", "").strip()
+          artist = os.environ.get("INPUT_ARTIST", "").strip() or "Nghệ sĩ chưa rõ"
+          thumbnail = os.environ.get("INPUT_THUMBNAIL", "").strip()
+          try:
+              duration = int(os.environ.get("INPUT_DURATION", "240"))
+          except:
+              duration = 240
 
-          catalog_path = 'data/catalog.json'
-          os.makedirs('data', exist_ok=True)
+          catalog_path = "data/catalog.json"
+          os.makedirs("data", exist_ok=True)
 
           catalog = []
           if os.path.exists(catalog_path):
               try:
-                  with open(catalog_path, 'r', encoding='utf-8') as f:
+                  with open(catalog_path, "r", encoding="utf-8") as f:
                       catalog = json.load(f)
               except:
                   catalog = []
 
-          cdn_download_url = f'https://github.com/${{ github.repository }}/releases/download/tracks-v1/{TARGET_FILE}'
+          cdn_download_url = f"https://github.com/${{ github.repository }}/releases/download/tracks-v1/{TARGET_FILE}"
           new_track = {
-              'id': f'trk-cloud-{int(time.time())}',
-              'title': title,
-              'artist': artist,
-              'duration': duration,
-              'album': 'Cloud Vault',
-              'genre': 'Stereo',
-              'bitrate': '256 kbps',
-              'format': 'm4a',
-              'coverUrl': thumbnail or f'https://i.ytimg.com/vi/default/hqdefault.jpg',
-              'streamUrl': f'/api/tracks/stream?file={TARGET_FILE}',
-              'cdnUrl': cdn_download_url,
-              'dateAdded': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+              "id": f"trk-cloud-{int(time.time())}",
+              "title": title,
+              "artist": artist,
+              "duration": duration,
+              "album": "Cloud Vault",
+              "genre": "Stereo",
+              "bitrate": "256 kbps",
+              "format": "m4a",
+              "coverUrl": thumbnail or f"https://i.ytimg.com/vi/default/hqdefault.jpg",
+              "streamUrl": f"/api/tracks/stream?file={TARGET_FILE}",
+              "cdnUrl": cdn_download_url,
+              "dateAdded": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
           }
 
-          updated = [new_track] + [t for t in catalog if t.get('id') != new_track['id']]
-          with open(catalog_path, 'w', encoding='utf-8') as f:
+          updated = [new_track] + [t for t in catalog if t.get("id") != new_track["id"]]
+          with open(catalog_path, "w", encoding="utf-8") as f:
               json.dump(updated, f, indent=2, ensure_ascii=False)
-          "
+          '
 
       - name: Commit & Push updated catalog.json
         run: |
