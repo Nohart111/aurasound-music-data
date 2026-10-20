@@ -48,10 +48,10 @@ jobs:
         run: |
           mkdir -p output
           python -c '
-          import subprocess, sys, time, os, re, unicodedata
+          import os, sys, json, time, re, unicodedata, subprocess, urllib.request, urllib.parse
 
           url = os.environ.get("INPUT_URL", "").strip()
-          title = os.environ.get("INPUT_TITLE", "").strip()
+          title = os.environ.get("INPUT_TITLE", "").strip() or "Track"
 
           def slugify(text):
               text = unicodedata.normalize("NFD", text).encode("ascii", "ignore").decode("utf-8").lower()
@@ -60,22 +60,59 @@ jobs:
 
           safe_name = f"{slugify(title)}-{int(time.time())}.m4a"
           out_path = os.path.join("output", safe_name)
+          downloaded = False
 
-          cmd = [
-              "yt-dlp",
-              "--extractor-args", "youtube:player_client=android_vr,android",
-              "-f", "ba[ext=m4a]/ba/b",
-              "--no-playlist",
-              "--no-part",
-              "--no-warnings",
-              "-o", out_path,
-              url
-          ]
+          # 1. Thử client tv_embedded & web_safari (không bị đòi bot check)
+          for client in ["tv_embedded,web_safari", "web_creator,mweb"]:
+              cmd = [
+                  "yt-dlp",
+                  "--extractor-args", f"youtube:player_client={client}",
+                  "-f", "ba[ext=m4a]/ba/b",
+                  "--no-playlist",
+                  "--no-part",
+                  "--no-warnings",
+                  "-o", out_path,
+                  url
+              ]
+              print(f"Thử tải qua client {client}...")
+              res = subprocess.run(cmd)
+              if res.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 100000:
+                  downloaded = True
+                  print("Tải thành công bằng yt-dlp!")
+                  break
 
-          print(f"Downloading: {url} -> {out_path}")
-          res = subprocess.run(cmd)
-          if res.returncode != 0:
-              print("yt-dlp failed with code", res.returncode)
+          # 2. Tự động chuyển qua Proxy dân cư nếu bị YouTube chặn IP
+          if not downloaded:
+              print("YouTube chặn bot trên IP máy ảo, tự động kích hoạt Cloud Proxy dự phòng...")
+              try:
+                  encoded_url = urllib.parse.quote(url)
+                  api_url = f"https://p.oceansaver.in/ajax/download.php?format=m4a&url={encoded_url}&api=dfcb6d76f2f6a9894gjkege8a4ab232222"
+                  req = urllib.request.Request(api_url, headers={"User-Agent": "Mozilla/5.0"})
+                  with urllib.request.urlopen(req, timeout=15) as resp:
+                      init_data = json.loads(resp.read().decode("utf-8"))
+
+                  job_id = init_data.get("id")
+                  prog_url = init_data.get("progress_url") or (f"https://p.oceansaver.in/ajax/progress.php?id={job_id}" if job_id else None)
+
+                  if prog_url:
+                      for _ in range(15):
+                          time.sleep(2)
+                          p_req = urllib.request.Request(prog_url, headers={"User-Agent": "Mozilla/5.0"})
+                          with urllib.request.urlopen(p_req, timeout=15) as p_resp:
+                              prog_data = json.loads(p_resp.read().decode("utf-8"))
+                          if prog_data.get("progress") == 1000 and prog_data.get("download_url"):
+                              dl_url = prog_data["download_url"]
+                              print(f"Đang kéo luồng âm thanh từ Cloud Proxy...")
+                              urllib.request.urlretrieve(dl_url, out_path)
+                              if os.path.exists(out_path) and os.path.getsize(out_path) > 100000:
+                                  downloaded = True
+                                  print("Tải thành công qua Cloud Proxy!")
+                                  break
+              except Exception as e:
+                  print("Lỗi proxy fallback:", e)
+
+          if not downloaded:
+              print("Tất cả các nguồn bóc tách đều thất bại.")
               sys.exit(1)
 
           with open("output/target_filename.txt", "w") as f:
