@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-L4eJs6GMnoE-1792519678611",
+    "videoId": "L4eJs6GMnoE",
+    "title": "Bùi Anh Tuấn",
+    "artist": "Nơi Tình Yêu Trở Lại [ lyric video ]",
+    "duration": 288,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/L4eJs6GMnoE/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=bui-anh-tuan-1792519703.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/bui-anh-tuan-1792519703.mp3",
+    "dateAdded": "2026-10-20T18:08:59Z"
+  },
+  {
     "id": "trk-5nOKORTZOeg-1792519589261",
     "videoId": "5nOKORTZOeg",
     "title": "Nơi Tình Yêu Bắt Đầu",
@@ -73,21 +88,6 @@
     "streamUrl": "/api/tracks/stream?file=nhat-phat-live-at-lululola-1792518721.mp3",
     "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/nhat-phat-live-at-lululola-1792518721.mp3",
     "dateAdded": "2026-10-20T17:52:29Z"
-  },
-  {
-    "id": "trk-OHXprFDOPZg-1792518372357",
-    "videoId": "OHXprFDOPZg",
-    "title": "Bùi Anh Tuấn",
-    "artist": "Hàn Gắn",
-    "duration": 246,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/OHXprFDOPZg/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=bui-anh-tuan-1792518402.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/bui-anh-tuan-1792518402.mp3",
-    "dateAdded": "2026-10-20T17:47:09Z"
   },
   {
     "id": "trk-5jbMKCyMfc8-1792517743062",
