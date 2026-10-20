@@ -62,8 +62,8 @@ jobs:
           out_path = os.path.join("output", safe_name)
           downloaded = False
 
-          # 1. Thử client tv_embedded & web_safari (không bị đòi bot check)
-          for client in ["tv_embedded,web_safari", "web_creator,mweb"]:
+          # 1. Thử client tv (Smart TV Protocol - không bao giờ đòi bot check)
+          for client in ["tv", "mweb"]:
               cmd = [
                   "yt-dlp",
                   "--extractor-args", f"youtube:player_client={client}",
@@ -78,21 +78,21 @@ jobs:
               res = subprocess.run(cmd)
               if res.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 100000:
                   downloaded = True
-                  print("Tải thành công bằng yt-dlp!")
+                  print("Tải thành công bằng yt-dlp client", client)
                   break
 
-          # 2. Tự động chuyển qua Proxy dân cư nếu bị YouTube chặn IP
+          # 2. Dự phòng qua Cloud Proxy p.savenow.to (domain chính thức hiện tại)
           if not downloaded:
-              print("YouTube chặn bot trên IP máy ảo, tự động kích hoạt Cloud Proxy dự phòng...")
+              print("Chuyển sang Cloud Proxy p.savenow.to...")
               try:
                   encoded_url = urllib.parse.quote(url)
-                  api_url = f"https://p.oceansaver.in/ajax/download.php?format=m4a&url={encoded_url}&api=dfcb6d76f2f6a9894gjkege8a4ab232222"
+                  api_url = f"https://p.savenow.to/ajax/download.php?format=m4a&url={encoded_url}&api=dfcb6d76f2f6a9894gjkege8a4ab232222"
                   req = urllib.request.Request(api_url, headers={"User-Agent": "Mozilla/5.0"})
                   with urllib.request.urlopen(req, timeout=15) as resp:
                       init_data = json.loads(resp.read().decode("utf-8"))
 
                   job_id = init_data.get("id")
-                  prog_url = init_data.get("progress_url") or (f"https://p.oceansaver.in/ajax/progress.php?id={job_id}" if job_id else None)
+                  prog_url = init_data.get("progress_url") or (f"https://p.savenow.to/ajax/progress.php?id={job_id}" if job_id else None)
 
                   if prog_url:
                       for _ in range(15):
@@ -102,7 +102,7 @@ jobs:
                               prog_data = json.loads(p_resp.read().decode("utf-8"))
                           if prog_data.get("progress") == 1000 and prog_data.get("download_url"):
                               dl_url = prog_data["download_url"]
-                              print(f"Đang kéo luồng âm thanh từ Cloud Proxy...")
+                              print("Đang tải luồng âm thanh từ Proxy...")
                               urllib.request.urlretrieve(dl_url, out_path)
                               if os.path.exists(out_path) and os.path.getsize(out_path) > 100000:
                                   downloaded = True
