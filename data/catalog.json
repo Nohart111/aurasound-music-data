@@ -1,5 +1,19 @@
 [
   {
+    "id": "trk-cloud-1792482236",
+    "title": "'một đời' x 'Người Tốt Nhất Cho Em'",
+    "artist": "Anh Trai Vượt Ngàn Chông Gai - Topic",
+    "duration": 159,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "256 kbps",
+    "format": "m4a",
+    "coverUrl": "https://i.ytimg.com/vi/aNPWCECbCD4/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=mot-oi-x-nguoi-tot-nhat-cho-em-1792482209.m4a",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/mot-oi-x-nguoi-tot-nhat-cho-em-1792482209.m4a",
+    "dateAdded": "2026-10-20T07:43:56Z"
+  },
+  {
     "id": "trk-cloud-1792482174",
     "title": "Tìm em ft. Bảo Anh",
     "artist": "Hngle",
