@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-XSAw8ya7zxM-1792519924839",
+    "videoId": "XSAw8ya7zxM",
+    "title": "Như Những Phút Ban Đầu",
+    "artist": "Hoài Lâm",
+    "duration": 359,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/XSAw8ya7zxM/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=nhu-nhung-phut-ban-dau-1792519959.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/nhu-nhung-phut-ban-dau-1792519959.mp3",
+    "dateAdded": "2026-10-20T18:13:17Z"
+  },
+  {
     "id": "trk-s1-qCmM9Z-w-1792519743098",
     "videoId": "s1-qCmM9Z-w",
     "title": "Nơi Tình Yêu Kết Thúc",
