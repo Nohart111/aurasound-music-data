@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-vKuHQRTS20U-1792518690499",
+    "videoId": "vKuHQRTS20U",
+    "title": "NHẬT PHÁT live at #Lululola",
+    "artist": "NGÔI NHÀ HẠNH PHÚC",
+    "duration": 207,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/vKuHQRTS20U/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=nhat-phat-live-at-lululola-1792518721.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/nhat-phat-live-at-lululola-1792518721.mp3",
+    "dateAdded": "2026-10-20T17:52:29Z"
+  },
+  {
     "id": "trk-OHXprFDOPZg-1792518372357",
     "videoId": "OHXprFDOPZg",
     "title": "Bùi Anh Tuấn",
