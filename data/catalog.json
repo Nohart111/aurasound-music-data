@@ -1,20 +1,5 @@
 [
   {
-    "id": "trk-U07kJZp5b1o-1792512776610",
-    "videoId": "U07kJZp5b1o",
-    "title": "Cho Tôi Đi Theo",
-    "artist": "Ngọt",
-    "duration": 181,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "256 kbps",
-    "format": "m4a",
-    "coverUrl": "https://i.ytimg.com/vi/U07kJZp5b1o/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=cho-toi-i-theo-1792512787.m4a",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/cho-toi-i-theo-1792512787.m4a",
-    "dateAdded": "2026-10-20T16:13:30Z"
-  },
-  {
     "id": "trk-1792488238216",
     "title": "ĐỪNG LÀM TRÁI TIM ANH ĐAU",
     "artist": "SƠN TÙNG M-TP",
