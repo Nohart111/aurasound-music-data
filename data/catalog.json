@@ -1,6 +1,6 @@
 [
   {
-    "id": "trk-5nOKORTZOeg-1792519494448",
+    "id": "trk-5nOKORTZOeg-1792519589261",
     "videoId": "5nOKORTZOeg",
     "title": "Nơi Tình Yêu Bắt Đầu",
     "artist": "Bùi Anh Tuấn",
@@ -10,9 +10,9 @@
     "bitrate": "192 kbps",
     "format": "mp3",
     "coverUrl": "https://i.ytimg.com/vi/5nOKORTZOeg/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=noi-tinh-yeu-bat-dau-1792519528.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/noi-tinh-yeu-bat-dau-1792519528.mp3",
-    "dateAdded": "2026-10-20T18:05:56Z"
+    "streamUrl": "/api/tracks/stream?file=noi-tinh-yeu-bat-dau-1792519638.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/noi-tinh-yeu-bat-dau-1792519638.mp3",
+    "dateAdded": "2026-10-20T18:07:51Z"
   },
   {
     "id": "trk-S0klW2Rgkgo-1792519416633",
