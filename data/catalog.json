@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-NxFYDbPkTJU-1792519130564",
+    "videoId": "NxFYDbPkTJU",
+    "title": "Những Ca Khúc Hay Nhất Của Yan Nguyễn 2023",
+    "artist": "Nên Chờ Hay Nên Quên",
+    "duration": 1738,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/NxFYDbPkTJU/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=nhung-ca-khuc-hay-nhat-cua-yan-nguyen-2023-1792519174.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/nhung-ca-khuc-hay-nhat-cua-yan-nguyen-2023-1792519174.mp3",
+    "dateAdded": "2026-10-20T18:00:44Z"
+  },
+  {
     "id": "trk-wpFqk03sQnI-1792519068572",
     "videoId": "wpFqk03sQnI",
     "title": "Như Một Người Dưng (Jerk Drill x Synth Club)",
