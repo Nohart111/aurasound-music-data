@@ -165,21 +165,6 @@
     "dateAdded": "2026-10-20T17:31:22Z"
   },
   {
-    "id": "trk-PCxhM7IHiwk-1792516512537",
-    "videoId": "PCxhM7IHiwk",
-    "title": "Lyrics Video HD",
-    "artist": "Bùi Anh Tuấn",
-    "duration": 256,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/PCxhM7IHiwk/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=lyrics-video-hd-1792516588.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/lyrics-video-hd-1792516588.mp3",
-    "dateAdded": "2026-10-20T17:17:03Z"
-  },
-  {
     "id": "trk-UCXao7aTDQM-1792515998389",
     "videoId": "UCXao7aTDQM",
     "title": "Tháng Tư Là Lời Nói Dối Của Em",
