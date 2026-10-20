@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-S0klW2Rgkgo-1792519416633",
+    "videoId": "S0klW2Rgkgo",
+    "title": "TINH HÀ SAY HI",
+    "artist": "Quang Hùng MasterD, WEAN, Sơn.K, XUÂN ĐỊNH KY",
+    "duration": 338,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/S0klW2Rgkgo/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=tinh-ha-say-hi-1792519452.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-ha-say-hi-1792519452.mp3",
+    "dateAdded": "2026-10-20T18:04:48Z"
+  },
+  {
     "id": "trk-XhakK--az9Q-1792519366603",
     "videoId": "XhakK--az9Q",
     "title": "20",
