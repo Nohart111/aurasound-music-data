@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-wpFqk03sQnI-1792519068572",
+    "videoId": "wpFqk03sQnI",
+    "title": "Như Một Người Dưng (Jerk Drill x Synth Club)",
+    "artist": "Nguyễn Thạc Bảo Ngọc",
+    "duration": 172,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/wpFqk03sQnI/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=nhu-mot-nguoi-dung-jerk-drill-x-synth-club-1792519094.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/nhu-mot-nguoi-dung-jerk-drill-x-synth-club-1792519094.mp3",
+    "dateAdded": "2026-10-20T17:58:43Z"
+  },
+  {
     "id": "trk-vKuHQRTS20U-1792518690499",
     "videoId": "vKuHQRTS20U",
     "title": "NHẬT PHÁT live at #Lululola",
