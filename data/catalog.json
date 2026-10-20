@@ -1,20 +1,5 @@
 [
   {
-    "id": "trk-UCXao7aTDQM-1792511580736",
-    "videoId": "UCXao7aTDQM",
-    "title": "Tháng Tư Là Lời Nói Dối Của Em",
-    "artist": "Hà Anh Tuấn",
-    "duration": 371,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "256 kbps",
-    "format": "m4a",
-    "coverUrl": "https://i.ytimg.com/vi/UCXao7aTDQM/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=thang-tu-la-loi-noi-doi-cua-em-1792511591.m4a",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/thang-tu-la-loi-noi-doi-cua-em-1792511591.m4a",
-    "dateAdded": "2026-10-20T15:53:34Z"
-  },
-  {
     "id": "trk-1792488238216",
     "title": "ĐỪNG LÀM TRÁI TIM ANH ĐAU",
     "artist": "SƠN TÙNG M-TP",
