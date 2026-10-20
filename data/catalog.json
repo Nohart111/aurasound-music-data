@@ -1,20 +1,5 @@
 [
   {
-    "id": "trk-EDDO5hggiOA-1792518798561",
-    "videoId": "EDDO5hggiOA",
-    "title": "Bùi Anh Tuấn @ Liveshow Mùa thu vàng",
-    "artist": "20181117 Hương ngọc lan",
-    "duration": 310,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/EDDO5hggiOA/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=bui-anh-tuan-liveshow-mua-thu-vang-1792518835.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/bui-anh-tuan-liveshow-mua-thu-vang-1792518835.mp3",
-    "dateAdded": "2026-10-20T17:54:33Z"
-  },
-  {
     "id": "trk-vKuHQRTS20U-1792518690499",
     "videoId": "vKuHQRTS20U",
     "title": "NHẬT PHÁT live at #Lululola",
