@@ -183,4 +183,5 @@ jobs:
           git config --global user.email "bot@aurasound.internal"
           git add data/catalog.json
           git commit -m "feat: add track '${{ github.event.inputs.title }}' to catalog.json" || exit 0
-          git push
+          git pull --rebase origin main
+          git push origin main
