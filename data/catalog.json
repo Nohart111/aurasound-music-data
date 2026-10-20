@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-PCxhM7IHiwk-1792520369633",
+    "videoId": "PCxhM7IHiwk",
+    "title": "Bùi Anh Tuấn",
+    "artist": "Mơ Hồ",
+    "duration": 256,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/PCxhM7IHiwk/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=bui-anh-tuan-1792520413.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/bui-anh-tuan-1792520413.mp3",
+    "dateAdded": "2026-10-20T18:20:46Z"
+  },
+  {
     "id": "trk-XSAw8ya7zxM-1792519924839",
     "videoId": "XSAw8ya7zxM",
     "title": "Như Những Phút Ban Đầu",
@@ -28,21 +43,6 @@
     "streamUrl": "/api/tracks/stream?file=noi-tinh-yeu-ket-thuc-1792519780.mp3",
     "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/noi-tinh-yeu-ket-thuc-1792519780.mp3",
     "dateAdded": "2026-10-20T18:10:15Z"
-  },
-  {
-    "id": "trk-L4eJs6GMnoE-1792519678611",
-    "videoId": "L4eJs6GMnoE",
-    "title": "Bùi Anh Tuấn",
-    "artist": "Nơi Tình Yêu Trở Lại [ lyric video ]",
-    "duration": 288,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/L4eJs6GMnoE/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=bui-anh-tuan-1792519703.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/bui-anh-tuan-1792519703.mp3",
-    "dateAdded": "2026-10-20T18:08:59Z"
   },
   {
     "id": "trk-5nOKORTZOeg-1792519589261",
