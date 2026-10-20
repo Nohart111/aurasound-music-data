@@ -1,20 +1,5 @@
 [
   {
-    "id": "trk-9UcQ7ddVjoc-1792514079823",
-    "videoId": "9UcQ7ddVjoc",
-    "title": "KHÔNG BUÔNG ft. Ari",
-    "artist": "Hngle",
-    "duration": 205,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "256 kbps",
-    "format": "m4a",
-    "coverUrl": "https://i.ytimg.com/vi/9UcQ7ddVjoc/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=khong-buong-ft-ari-1792514092.m4a",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/khong-buong-ft-ari-1792514092.m4a",
-    "dateAdded": "2026-10-20T16:35:23Z"
-  },
-  {
     "id": "trk-U07kJZp5b1o-1792513195152",
     "videoId": "U07kJZp5b1o",
     "title": "Cho Tôi Đi Theo",
