@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-z_R9gRiWSlg-1792556879766",
+    "videoId": "z_R9gRiWSlg",
+    "title": "Dầm Mưa (nhưng không cảm lạnh) ft. ERIK X Nguyễn Phúc Thiện",
+    "artist": "MUỘII",
+    "duration": 247,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/z_R9gRiWSlg/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=dam-mua-nhung-khong-cam-lanh-ft-erik-x-nguyen-phuc-1792556908.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/dam-mua-nhung-khong-cam-lanh-ft-erik-x-nguyen-phuc-1792556908.mp3",
+    "dateAdded": "2026-10-21T04:28:53Z"
+  },
+  {
     "id": "trk-jPjQJYKhhk4-1792556801622",
     "videoId": "jPjQJYKhhk4",
     "title": "Phép Màu (Đàn Cá Gỗ OST)",
