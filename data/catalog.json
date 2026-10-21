@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-fHIqymvGLM8-1792562439862",
+    "videoId": "fHIqymvGLM8",
+    "title": "Em Gái Mưa ► Hương Tràm || ZymMii",
+    "artist": "ZymMii",
+    "duration": 298,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/fHIqymvGLM8/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=em-gai-mua-huong-tram-zymmii-1792562471.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/em-gai-mua-huong-tram-zymmii-1792562471.mp3",
+    "dateAdded": "2026-10-21T06:01:38Z"
+  },
+  {
     "id": "trk-0DQUu0xW0fE-1792562192650",
     "videoId": "0DQUu0xW0fE",
     "title": "Nhạc Tết Căng Nhất 2025 (phương)",
