@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-0DQUu0xW0fE-1792562192650",
+    "videoId": "0DQUu0xW0fE",
+    "title": "Nhạc Tết Căng Nhất 2025 (phương)",
+    "artist": "Ccmk x Lê Bảo x Prod. Zenkey, ‪@lebaoofficial ‬",
+    "duration": 235,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/0DQUu0xW0fE/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=nhac-tet-cang-nhat-2025-phuong-1792562229.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/nhac-tet-cang-nhat-2025-phuong-1792562229.mp3",
+    "dateAdded": "2026-10-21T05:57:37Z"
+  },
+  {
     "id": "trk-WtAuSC3lk14-1792561855609",
     "videoId": "WtAuSC3lk14",
     "title": "Haru Haru (하루 하루) [Hangul/Romanization/English] Color & Picture Coded HD",
