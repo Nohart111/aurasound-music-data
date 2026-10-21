@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-ofTeEDEhDPI-1792566251246",
+    "videoId": "ofTeEDEhDPI",
+    "title": "Nợ Em Cả Bầu Trời",
+    "artist": "Anh Trai Vượt Ngàn Chông Gai",
+    "duration": 306,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/ofTeEDEhDPI/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=no-em-ca-bau-troi-1792566282.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/no-em-ca-bau-troi-1792566282.mp3",
+    "dateAdded": "2026-10-21T07:05:13Z"
+  },
+  {
     "id": "trk-fHIqymvGLM8-1792562439862",
     "videoId": "fHIqymvGLM8",
     "title": "Em Gái Mưa ► Hương Tràm || ZymMii",
