@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-EYJimpsoE3g-1792576405817",
+    "videoId": "EYJimpsoE3g",
+    "title": "Một Bước Yêu, Vạn Dặm Đau ( )",
+    "artist": "Mr. Siro",
+    "duration": 299,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/EYJimpsoE3g/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=mot-buoc-yeu-van-dam-dau-1792576446.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/mot-buoc-yeu-van-dam-dau-1792576446.mp3",
+    "dateAdded": "2026-10-21T09:54:34Z"
+  },
+  {
     "id": "trk-ofTeEDEhDPI-1792566251246",
     "videoId": "ofTeEDEhDPI",
     "title": "Nợ Em Cả Bầu Trời",
