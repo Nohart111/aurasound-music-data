@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-f9P7_qWrf38-1792556732592",
+    "videoId": "f9P7_qWrf38",
+    "title": "bình yên / Vũ. ft. Binz từ Album \"Bảo Tàng Của Nuối Tiếc",
+    "artist": "Vũ",
+    "duration": 203,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/f9P7_qWrf38/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=binh-yen-vu-ft-binz-tu-album-bao-tang-cua-nuoi-tie-1792556768.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/binh-yen-vu-ft-binz-tu-album-bao-tang-cua-nuoi-tie-1792556768.mp3",
+    "dateAdded": "2026-10-21T04:26:37Z"
+  },
+  {
     "id": "trk-h6RONxjPBf4-1792556649562",
     "videoId": "h6RONxjPBf4",
     "title": "NHỮNG LỜI HỨA BỎ QUÊN / VŨ. x DEAR JANE từ Album \"Bảo Tàng Của Nuối Tiếc",
