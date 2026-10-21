@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-HX3UcwUYMjM-1792551883314",
+    "videoId": "HX3UcwUYMjM",
+    "title": "Made In Vietnam",
+    "artist": "DTAP x NSND Thanh Hoa x Trúc Nhân x Phương Mỹ Chi",
+    "duration": 321,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/HX3UcwUYMjM/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=made-in-vietnam-1792551909.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/made-in-vietnam-1792551909.mp3",
+    "dateAdded": "2026-10-21T03:05:41Z"
+  },
+  {
     "id": "trk-SlQR9iu09bQ-1792551753651",
     "videoId": "SlQR9iu09bQ",
     "title": "Come My Way",
