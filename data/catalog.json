@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-ECxVfrwwTp0-1792578319706",
+    "videoId": "ECxVfrwwTp0",
+    "title": "Gác lại âu lo",
+    "artist": "Da LAB ft. Miu Lê",
+    "duration": 307,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/ECxVfrwwTp0/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=gac-lai-au-lo-1792578357.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/gac-lai-au-lo-1792578357.mp3",
+    "dateAdded": "2026-10-21T10:26:33Z"
+  },
+  {
     "id": "trk-dF_QI8InemQ-1792576479149",
     "videoId": "dF_QI8InemQ",
     "title": "Lâm Bảo Ngọc live đầy da diết tại Xuân Hạ Thu Đông, rồi lại Xuân mùa 3",
