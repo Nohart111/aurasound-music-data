@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-dF_QI8InemQ-1792576479149",
+    "videoId": "dF_QI8InemQ",
+    "title": "Lâm Bảo Ngọc live đầy da diết tại Xuân Hạ Thu Đông, rồi lại Xuân mùa 3",
+    "artist": "[XHTDRLX3] Từng Quen",
+    "duration": 227,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/dF_QI8InemQ/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=lam-bao-ngoc-live-day-da-diet-tai-xuan-ha-thu-dong-1792576512.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/lam-bao-ngoc-live-day-da-diet-tai-xuan-ha-thu-dong-1792576512.mp3",
+    "dateAdded": "2026-10-21T09:55:44Z"
+  },
+  {
     "id": "trk-EYJimpsoE3g-1792576405817",
     "videoId": "EYJimpsoE3g",
     "title": "Một Bước Yêu, Vạn Dặm Đau ( )",
