@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-h6RONxjPBf4-1792556649562",
+    "videoId": "h6RONxjPBf4",
+    "title": "NHỮNG LỜI HỨA BỎ QUÊN / VŨ. x DEAR JANE từ Album \"Bảo Tàng Của Nuối Tiếc",
+    "artist": "Vũ",
+    "duration": 259,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/h6RONxjPBf4/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=nhung-loi-hua-bo-quen-vu-x-dear-jane-tu-album-bao--1792556695.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/nhung-loi-hua-bo-quen-vu-x-dear-jane-tu-album-bao--1792556695.mp3",
+    "dateAdded": "2026-10-21T04:25:27Z"
+  },
+  {
     "id": "trk-gJAbDSse5WM-1792556331435",
     "videoId": "gJAbDSse5WM",
     "title": "Tìm em ft. Bảo Anh",
