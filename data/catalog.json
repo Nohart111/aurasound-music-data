@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-jPjQJYKhhk4-1792556801622",
+    "videoId": "jPjQJYKhhk4",
+    "title": "Phép Màu (Đàn Cá Gỗ OST)",
+    "artist": "Mounter x MAYDAYs, Minh Tốc",
+    "duration": 255,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/jPjQJYKhhk4/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=phep-mau-dan-ca-go-ost-1792556845.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/phep-mau-dan-ca-go-ost-1792556845.mp3",
+    "dateAdded": "2026-10-21T04:27:55Z"
+  },
+  {
     "id": "trk-f9P7_qWrf38-1792556732592",
     "videoId": "f9P7_qWrf38",
     "title": "bình yên / Vũ. ft. Binz từ Album \"Bảo Tàng Của Nuối Tiếc",
