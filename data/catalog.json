@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-9UcQ7ddVjoc-1792551965481",
+    "videoId": "9UcQ7ddVjoc",
+    "title": "KHÔNG BUÔNG ft. Ari",
+    "artist": "Hngle",
+    "duration": 204,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/9UcQ7ddVjoc/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=khong-buong-ft-ari-1792552003.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/khong-buong-ft-ari-1792552003.mp3",
+    "dateAdded": "2026-10-21T03:07:13Z"
+  },
+  {
     "id": "trk-HX3UcwUYMjM-1792551883314",
     "videoId": "HX3UcwUYMjM",
     "title": "Made In Vietnam",
