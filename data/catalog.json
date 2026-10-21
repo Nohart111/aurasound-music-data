@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-SlQR9iu09bQ-1792551753651",
+    "videoId": "SlQR9iu09bQ",
+    "title": "Come My Way",
+    "artist": "SON TUNG M-TP x TYGA",
+    "duration": 235,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/SlQR9iu09bQ/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=come-my-way-1792551793.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/come-my-way-1792551793.mp3",
+    "dateAdded": "2026-10-21T03:03:43Z"
+  },
+  {
     "id": "trk-PCxhM7IHiwk-1792520369633",
     "videoId": "PCxhM7IHiwk",
     "title": "Bùi Anh Tuấn",
