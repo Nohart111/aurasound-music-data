@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-69ZDBWoj5YM-1792556217107",
+    "videoId": "69ZDBWoj5YM",
+    "title": "Giờ Thì / buitruonglinh",
+    "artist": "buitruonglinh",
+    "duration": 238,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/69ZDBWoj5YM/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=gio-thi-buitruonglinh-1792556247.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/gio-thi-buitruonglinh-1792556247.mp3",
+    "dateAdded": "2026-10-21T04:17:53Z"
+  },
+  {
     "id": "trk-9UcQ7ddVjoc-1792551965481",
     "videoId": "9UcQ7ddVjoc",
     "title": "KHÔNG BUÔNG ft. Ari",
