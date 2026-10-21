@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-gJAbDSse5WM-1792556331435",
+    "videoId": "gJAbDSse5WM",
+    "title": "Tìm em ft. Bảo Anh",
+    "artist": "Hngle",
+    "duration": 272,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/gJAbDSse5WM/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=tim-em-ft-bao-anh-1792556367.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tim-em-ft-bao-anh-1792556367.mp3",
+    "dateAdded": "2026-10-21T04:19:53Z"
+  },
+  {
     "id": "trk-69ZDBWoj5YM-1792556217107",
     "videoId": "69ZDBWoj5YM",
     "title": "Giờ Thì / buitruonglinh",
