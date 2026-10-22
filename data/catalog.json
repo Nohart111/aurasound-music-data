@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-S-YVjeYC4T8-1792695902986",
+    "videoId": "S-YVjeYC4T8",
+    "title": "Em Là Cô Dâu Việt Nam",
+    "artist": "Vũ Thuỳ Linh – Trộm Vía",
+    "duration": 244,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/S-YVjeYC4T8/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=em-la-co-dau-viet-nam-1792695938.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/em-la-co-dau-viet-nam-1792695938.mp3",
+    "dateAdded": "2026-10-22T19:06:10Z"
+  },
+  {
     "id": "trk-VbtVgQn_Zkk-1792695837939",
     "videoId": "VbtVgQn_Zkk",
     "title": "Đá tan",
