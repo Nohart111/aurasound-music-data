@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-ONC4VW_ZSD4-1792696628339",
+    "videoId": "ONC4VW_ZSD4",
+    "title": "chờ chút... CONGB",
+    "artist": "Tinh Hà Say Hi [mv Lyrics]",
+    "duration": 254,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/ONC4VW_ZSD4/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=cho-chut-congb-1792698511.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/cho-chut-congb-1792698511.mp3",
+    "dateAdded": "2026-10-22T19:49:01Z"
+  },
+  {
     "id": "trk-XqLsUne19Gs-1792697497854",
     "videoId": "XqLsUne19Gs",
     "title": "Tinh Hà Say Hi",
@@ -13,21 +28,6 @@
     "streamUrl": "/api/tracks/stream?file=tinh-ha-say-hi-1792697546.mp3",
     "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-ha-say-hi-1792697546.mp3",
     "dateAdded": "2026-10-22T19:32:58Z"
-  },
-  {
-    "id": "trk-GczyPW3vbrc-1792697106223",
-    "videoId": "GczyPW3vbrc",
-    "title": "chờ chút... CONGB",
-    "artist": "Tinh Hà Say Hi -  Visualizer",
-    "duration": 217,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/GczyPW3vbrc/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=cho-chut-congb-1792697134.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/cho-chut-congb-1792697134.mp3",
-    "dateAdded": "2026-10-22T19:26:10Z"
   },
   {
     "id": "trk-TtOsamV2C7o-1792693832822",
