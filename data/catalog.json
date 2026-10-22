@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk--6s_eRHYqVM-1792695763687",
+    "videoId": "-6s_eRHYqVM",
+    "title": "Em dạo này",
+    "artist": "Ngọt",
+    "duration": 253,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/-6s_eRHYqVM/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=em-dao-nay-1792695801.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/em-dao-nay-1792695801.mp3",
+    "dateAdded": "2026-10-22T19:03:53Z"
+  },
+  {
     "id": "trk-yJbGCwT7Kms-1792695679399",
     "videoId": "yJbGCwT7Kms",
     "title": "Hết Thời",
