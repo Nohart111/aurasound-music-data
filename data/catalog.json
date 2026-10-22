@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-2g2QOisCvhs-1792672740714",
+    "videoId": "2g2QOisCvhs",
+    "title": "Kẻ Theo Đuổi Ánh Sáng",
+    "artist": "Huy Vạc x Tiến Nguyễn",
+    "duration": 232,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/2g2QOisCvhs/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=ke-theo-duoi-anh-sang-1792672772.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/ke-theo-duoi-anh-sang-1792672772.mp3",
+    "dateAdded": "2026-10-22T12:40:04Z"
+  },
+  {
     "id": "trk-ECxVfrwwTp0-1792578319706",
     "videoId": "ECxVfrwwTp0",
     "title": "Gác lại âu lo",
