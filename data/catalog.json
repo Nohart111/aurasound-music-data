@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-XqLsUne19Gs-1792697497854",
+    "videoId": "XqLsUne19Gs",
+    "title": "Tinh Hà Say Hi",
+    "artist": "Quang Hùng MasterD, Pháp Kiều, CoolKid, CAPTAIN BOY, DANNY CHUNG",
+    "duration": 304,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/XqLsUne19Gs/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=tinh-ha-say-hi-1792697546.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-ha-say-hi-1792697546.mp3",
+    "dateAdded": "2026-10-22T19:32:58Z"
+  },
+  {
     "id": "trk-GczyPW3vbrc-1792697106223",
     "videoId": "GczyPW3vbrc",
     "title": "chờ chút... CONGB",
@@ -463,21 +478,6 @@
     "streamUrl": "/api/tracks/stream?file=noi-tinh-yeu-bat-dau-1792519638.mp3",
     "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/noi-tinh-yeu-bat-dau-1792519638.mp3",
     "dateAdded": "2026-10-20T18:07:51Z"
-  },
-  {
-    "id": "trk-S0klW2Rgkgo-1792519416633",
-    "videoId": "S0klW2Rgkgo",
-    "title": "TINH HÀ SAY HI",
-    "artist": "Quang Hùng MasterD, WEAN, Sơn.K, XUÂN ĐỊNH KY",
-    "duration": 338,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/S0klW2Rgkgo/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=tinh-ha-say-hi-1792519452.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-ha-say-hi-1792519452.mp3",
-    "dateAdded": "2026-10-20T18:04:48Z"
   },
   {
     "id": "trk-NxFYDbPkTJU-1792519130564",
