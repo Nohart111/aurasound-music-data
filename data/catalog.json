@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-VbtVgQn_Zkk-1792695837939",
+    "videoId": "VbtVgQn_Zkk",
+    "title": "Đá tan",
+    "artist": "Ngọt",
+    "duration": 202,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/VbtVgQn_Zkk/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=da-tan-1792695871.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/da-tan-1792695871.mp3",
+    "dateAdded": "2026-10-22T19:04:57Z"
+  },
+  {
     "id": "trk--6s_eRHYqVM-1792695763687",
     "videoId": "-6s_eRHYqVM",
     "title": "Em dạo này",
