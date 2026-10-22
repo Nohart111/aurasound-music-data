@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-GgQFO8dL5XQ-1792672573063",
+    "videoId": "GgQFO8dL5XQ",
+    "title": "Thanh Xuân",
+    "artist": "Da LAB",
+    "duration": 241,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/GgQFO8dL5XQ/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=thanh-xuan-1792673534.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/thanh-xuan-1792673534.mp3",
+    "dateAdded": "2026-10-22T12:52:46Z"
+  },
+  {
     "id": "trk-CgXFHAEVJtA-1792672761078",
     "videoId": "CgXFHAEVJtA",
     "title": "AURA (Official Visualiser)",
