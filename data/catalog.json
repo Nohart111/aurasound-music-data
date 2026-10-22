@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-ECZVU4x6Xq0-1792695531114",
+    "videoId": "ECZVU4x6Xq0",
+    "title": "CHUYỂN KÊNH (sản phẩm này không phải là thuốc)",
+    "artist": "Ngọt",
+    "duration": 310,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/ECZVU4x6Xq0/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=chuyen-kenh-san-pham-nay-khong-phai-la-thuoc-1792695558.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/chuyen-kenh-san-pham-nay-khong-phai-la-thuoc-1792695558.mp3",
+    "dateAdded": "2026-10-22T18:59:52Z"
+  },
+  {
     "id": "trk-GgQFO8dL5XQ-1792672573063",
     "videoId": "GgQFO8dL5XQ",
     "title": "Thanh Xuân",
