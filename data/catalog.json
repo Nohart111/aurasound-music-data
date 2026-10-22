@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-GczyPW3vbrc-1792697106223",
+    "videoId": "GczyPW3vbrc",
+    "title": "chờ chút... CONGB",
+    "artist": "Tinh Hà Say Hi -  Visualizer",
+    "duration": 217,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/GczyPW3vbrc/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=cho-chut-congb-1792697134.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/cho-chut-congb-1792697134.mp3",
+    "dateAdded": "2026-10-22T19:26:10Z"
+  },
+  {
     "id": "trk-TtOsamV2C7o-1792693832822",
     "videoId": "TtOsamV2C7o",
     "title": "Thương Nhau Đến Thế Nhưng Chỉ Là Đã Từng Remix",
