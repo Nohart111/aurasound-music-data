@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-9mA7h1jfxc8-1792695597265",
+    "videoId": "9mA7h1jfxc8",
+    "title": "Thấy Chưa",
+    "artist": "Ngọt",
+    "duration": 238,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/9mA7h1jfxc8/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=thay-chua-1792695639.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/thay-chua-1792695639.mp3",
+    "dateAdded": "2026-10-22T19:01:14Z"
+  },
+  {
     "id": "trk-ECZVU4x6Xq0-1792695531114",
     "videoId": "ECZVU4x6Xq0",
     "title": "CHUYỂN KÊNH (sản phẩm này không phải là thuốc)",
