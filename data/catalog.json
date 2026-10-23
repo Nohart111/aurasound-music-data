@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-yh2h_YwILII-1792774737026",
+    "videoId": "yh2h_YwILII",
+    "title": "Chú Đại Bi (vô Lượng)",
+    "artist": "Masew, Khoi Vu",
+    "duration": 235,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/yh2h_YwILII/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=chu-dai-bi-vo-luong-1792774787.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/chu-dai-bi-vo-luong-1792774787.mp3",
+    "dateAdded": "2026-10-23T17:00:20Z"
+  },
+  {
     "id": "trk-ONC4VW_ZSD4-1792696628339",
     "videoId": "ONC4VW_ZSD4",
     "title": "chờ chút... CONGB",
