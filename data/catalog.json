@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-8-bKjcADU18-1792857180225",
+    "videoId": "8-bKjcADU18",
+    "title": "Tinh Hà Say Hi",
+    "artist": "Wren Evans, Ali Hoàng Dương, Cody Nam Võ, HYO, 2PILLZ",
+    "duration": 337,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/8-bKjcADU18/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=tinh-ha-say-hi-1792857210.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-ha-say-hi-1792857210.mp3",
+    "dateAdded": "2026-10-24T15:54:02Z"
+  },
+  {
     "id": "trk-yh2h_YwILII-1792774567494",
     "videoId": "yh2h_YwILII",
     "title": "Chú Đại Bi (vô Lượng)",
@@ -28,21 +43,6 @@
     "streamUrl": "/api/tracks/stream?file=cho-chut-congb-1792698511.mp3",
     "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/cho-chut-congb-1792698511.mp3",
     "dateAdded": "2026-10-22T19:49:01Z"
-  },
-  {
-    "id": "trk-XqLsUne19Gs-1792697497854",
-    "videoId": "XqLsUne19Gs",
-    "title": "Tinh Hà Say Hi",
-    "artist": "Quang Hùng MasterD, Pháp Kiều, CoolKid, CAPTAIN BOY, DANNY CHUNG",
-    "duration": 304,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/XqLsUne19Gs/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=tinh-ha-say-hi-1792697546.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-ha-say-hi-1792697546.mp3",
-    "dateAdded": "2026-10-22T19:32:58Z"
   },
   {
     "id": "trk-TtOsamV2C7o-1792693832822",
