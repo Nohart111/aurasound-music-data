@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-vaY7qQG_P8g-1792857410781",
+    "videoId": "vaY7qQG_P8g",
+    "title": "Bức Tường Ngăn Cách Hai Ta",
+    "artist": "Emcee L (Da LAB)",
+    "duration": 249,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/vaY7qQG_P8g/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=buc-tuong-ngan-cach-hai-ta-1792857451.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/buc-tuong-ngan-cach-hai-ta-1792857451.mp3",
+    "dateAdded": "2026-10-24T15:58:02Z"
+  },
+  {
     "id": "trk-8-bKjcADU18-1792857180225",
     "videoId": "8-bKjcADU18",
     "title": "Tinh Hà Say Hi",
