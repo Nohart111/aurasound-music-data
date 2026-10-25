@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-iFbbnzR2E88-1792932692669",
+    "videoId": "iFbbnzR2E88",
+    "title": "The Other Side Of Paradise (Fan )",
+    "artist": "Glass Animals",
+    "duration": 321,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/iFbbnzR2E88/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=the-other-side-of-paradise-fan-1792932724.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/the-other-side-of-paradise-fan-1792932724.mp3",
+    "dateAdded": "2026-10-25T12:52:54Z"
+  },
+  {
     "id": "trk-vaY7qQG_P8g-1792857410781",
     "videoId": "vaY7qQG_P8g",
     "title": "Bức Tường Ngăn Cách Hai Ta",
