@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-oeCZqrpWjys-1792932867587",
+    "videoId": "oeCZqrpWjys",
+    "title": "One Kiss (R3HAB Remix)",
+    "artist": "Calvin Harris & Dua Lipa",
+    "duration": 191,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/oeCZqrpWjys/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=one-kiss-r3hab-remix-1792932903.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/one-kiss-r3hab-remix-1792932903.mp3",
+    "dateAdded": "2026-10-25T12:55:35Z"
+  },
+  {
     "id": "trk-iFbbnzR2E88-1792932692669",
     "videoId": "iFbbnzR2E88",
     "title": "The Other Side Of Paradise (Fan )",
