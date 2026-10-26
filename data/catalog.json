@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-redFrGBZoJY-1793002254818",
+    "videoId": "redFrGBZoJY",
+    "title": "Sinh Ra Đã Là Thứ Đối Lập Nhau",
+    "artist": "Emcee L (Da LAB) ft. Badbies",
+    "duration": 248,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/redFrGBZoJY/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=sinh-ra-da-la-thu-doi-lap-nhau-1793002288.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/sinh-ra-da-la-thu-doi-lap-nhau-1793002288.mp3",
+    "dateAdded": "2026-10-26T08:11:57Z"
+  },
+  {
     "id": "trk-6eONmnFB9sw-1793002191688",
     "videoId": "6eONmnFB9sw",
     "title": "Chuyện Đôi Ta",
