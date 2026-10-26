@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-JfL4y-ZfHGI-1793002321252",
+    "videoId": "JfL4y-ZfHGI",
+    "title": "Tình Yêu Lớn",
+    "artist": "Emcee L ft. Muộii",
+    "duration": 299,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/JfL4y-ZfHGI/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=tinh-yeu-lon-1793004487.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/tinh-yeu-lon-1793004487.mp3",
+    "dateAdded": "2026-10-26T08:48:41Z"
+  },
+  {
     "id": "trk-1eI9eWiiwOY-1793002402957",
     "videoId": "1eI9eWiiwOY",
     "title": "CONTINUUM\" Album Release Showcase",
