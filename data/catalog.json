@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-tN1TZAuL4P8-1793255826621",
+    "videoId": "tN1TZAuL4P8",
+    "title": "Thu Cuối ft Yanbi & Hằng BingBoong",
+    "artist": "Mr.T",
+    "duration": 261,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/tN1TZAuL4P8/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=thu-cuoi-ft-yanbi-hang-bingboong-1793255861.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/thu-cuoi-ft-yanbi-hang-bingboong-1793255861.mp3",
+    "dateAdded": "2026-10-29T06:38:03Z"
+  },
+  {
     "id": "trk-JfL4y-ZfHGI-1793002321252",
     "videoId": "JfL4y-ZfHGI",
     "title": "Tình Yêu Lớn",
