@@ -1,5 +1,20 @@
 [
   {
+    "id": "trk-FN7ALfpGxiI-1794793946728",
+    "videoId": "FN7ALfpGxiI",
+    "title": "Nơi Này Có Anh",
+    "artist": "Sơn Tùng M-TP",
+    "duration": 262,
+    "album": "Cloud Vault",
+    "genre": "Stereo",
+    "bitrate": "192 kbps",
+    "format": "mp3",
+    "coverUrl": "https://i.ytimg.com/vi/FN7ALfpGxiI/hqdefault.jpg",
+    "streamUrl": "/api/tracks/stream?file=noi-nay-co-anh-1794793977.mp3",
+    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/noi-nay-co-anh-1794793977.mp3",
+    "dateAdded": "2026-11-16T01:53:13Z"
+  },
+  {
     "id": "trk-hX9S94XsySk-1794760633562",
     "videoId": "hX9S94XsySk",
     "title": "Hong Kong (feat. 王菲季候風)",
@@ -688,21 +703,6 @@
     "streamUrl": "/api/tracks/stream?file=dom-dom-1792517516.mp3",
     "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/dom-dom-1792517516.mp3",
     "dateAdded": "2026-10-20T17:32:31Z"
-  },
-  {
-    "id": "trk-FN7ALfpGxiI-1792517413367",
-    "videoId": "FN7ALfpGxiI",
-    "title": "| SƠN TÙNG M-TP",
-    "artist": "NƠI NÀY CÓ ANH",
-    "duration": 278,
-    "album": "Cloud Vault",
-    "genre": "Stereo",
-    "bitrate": "192 kbps",
-    "format": "mp3",
-    "coverUrl": "https://i.ytimg.com/vi/FN7ALfpGxiI/hqdefault.jpg",
-    "streamUrl": "/api/tracks/stream?file=son-tung-m-tp-1792517448.mp3",
-    "cdnUrl": "https://github.com/Nohart111/aurasound-music-data/releases/download/tracks-v1/son-tung-m-tp-1792517448.mp3",
-    "dateAdded": "2026-10-20T17:31:22Z"
   },
   {
     "id": "trk-UCXao7aTDQM-1792515998389",
